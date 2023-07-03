@@ -1,1 +1,1 @@
-# Javascript - Curso em Vídeo
+## Javascript e ECMAScript - Curso em Vídeo
