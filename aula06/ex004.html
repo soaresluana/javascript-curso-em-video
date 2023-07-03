@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h2>Aula 006 - Formatação Strings/ Números</h2>
+    <style>
+        body {
+            font: normal 14 pt Arial;
+            font-size: 12pt;
+            background-color: coral;
+            color: white;
+            background-image: url('farol.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .max-width {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = prompt('Qual seu nome?');
+        document.write(`<strong>Olá, ${nome}. Seu nome tem ${nome.length} letras.</strong><br/>`);
+        document.write(`maiúsc: ${nome.toUpperCase()}<br/>`);
+        document.write(`minúsc: ${nome.toLowerCase()}<br/>`);
+        document.write(nome[0].toUpperCase() + nome.substring(1));
+    </script>
+    
+</body>
+</html>
