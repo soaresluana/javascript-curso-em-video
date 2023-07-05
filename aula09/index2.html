@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iniciando com DOM - MÉTODOS DE ACESSO</title>
+    <style>
+      body {
+        background: rgb(223, 121, 37);
+        color: black;
+        font: normal 17pt Arial;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado:</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div name="msg">Clique em mim</div>
+    <!-- <div class="msg">Clique em mim</div> -->
+    <script>
+      // selecionando por nome
+      var d = document.getElementsByName("msg")[0];
+      d.innerText = "Olá!";
+
+      /**
+       *   selecionando por classe:
+           document.getElementsByClassName('msg')[0];
+       */
+    </script>
+  </body>
+</html>

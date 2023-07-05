@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iniciando com DOM - Métodos de acesso</title>
+    <style>
+      body {
+        background: rgb(223, 121, 37);
+        color: black;
+        font: normal 17pt Arial;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado:</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">CLIQUE EM MIM</div>
+    <script>
+      // selecionando usando o Query Selector
+      var d = window.document.querySelector('div#msg'); // ('div.msg') -> se for classe usa-se um ponto. 
+      d.style.color = 'red';
+    </script>
+  </body>
+</html>

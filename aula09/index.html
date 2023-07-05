@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iniciando com DOM - MÉTODOS DE ACESSO</title>
+    <style>
+      body {
+        background: rgb(223, 121, 37);
+        color: black;
+        font: normal 17pt Arial;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado:</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+      // selecionando por id
+      var d = document.getElementById("msg");
+      d.style.background = "red";
+      //d.innerText  = 'Aguardando...' -> mudando o conteúdo da div
+    </script>
+  </body>
+</html>
