@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>DETRAN</title>
+    <style>
+      .button {
+        font-weight: bold;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        padding: 6px 14px;
+        border: 1px solid #888888;
+        border-bottom: 1px solid #555555;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+        background-image: linear-gradient(#93db63, #daf3b3);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>SISTEMA DE MULTAS</h1>
+    <strong>Velocidade do carro:</strong>
+    <input type="number" name="txtvel" id="txtvel" /> <strong>Km/hr.</strong>
+    <br />
+    <input
+      type="button"
+      value="Verificar:"
+      onclick="calcular()"
+      class="button"
+    />
+    <div id="res"></div>
+    <script>
+      function calcular() {
+        var txtv = document.querySelector("input#txtvel");
+        var res = document.querySelector("div#res");
+        var vel = Number(txtv.value);
+        res.innerHTML = `<strong> Sua velocidade atual é de ${vel} km/hr </strong>`;
+
+        if (vel > 60) {
+          res.innerHTML = `<strong>Velocidade ḿaxima permitida ultrapassada, MULTA.</strong>`;
+        } else {
+          res.innerHTML = `<strong>Responsabilidade no trânsito: um dever de todos.</strong>`;
+        }
+        res.innerHTML += `<p> <strong>Dirija sempre com cinto de segurança!</strong> </p>`;
+      }
+    </script>
+  </body>
+</html>

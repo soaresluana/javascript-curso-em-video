@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="globo.ico" type="image/x-icon" />
+    <title>Nacionalidade</title>
+    <style>
+      .button {
+        font-weight: bold;
+        background-color: rgb(157, 212, 194);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>NACIONALIDADE</h2>
+    <strong> Informe seu país de origem: </strong>
+    <input type="text" name="txtorigem" id="txtorigem" />
+    <input
+      type="button"
+      value="analisando informação..."
+      onclick="confirmar()"
+      class="button"
+    />
+    <div id="result"></div>
+    <script>
+      function confirmar() {
+        var pais = document.querySelector("input#txtorigem");
+        var result = document.querySelector("div#result");
+        var nacionalidade = pais.value;
+        result.innerHTML = `Você é do(a) ${nacionalidade}! `;
+        if (nacionalidade == "Brasil") {
+          result.innerHTML = `<strong>Seu país de origem é: ${nacionalidade}! </strong>`;
+        } else {
+          result.innerHTML = `<strong>Seu país de origem é: ${nacionalidade}. Estrangeiro!</strong>`;
+        }
+      }
+    </script>
+  </body>
+</html>
